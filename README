@@ -1,0 +1,31 @@
+Tema 1: LAN Party
+
+Fisiere folosite:
+lanParty.cpp - main si implementare functii generale
+lanParty.hpp - definire functii generale
+player.hpp - clasa Player (jucator)
+team.hpp - clasa Team (echipa)
+match.hpp - clasa Match (meci)
+
+Scurta explicatie a implementarii:
+In main se citesc cele 6 valori booleane din c.in si se pun in coada tasks.
+Pentru fiecare numar i de la 1 la 5:
+	- Se scoate un boolean din coada
+	- Daca el nu este 0, se va porni taskul cu numarul i
+	- Inainte de taskul 3, se va printa lista echipelor indiferent daca 3 se executa
+Daca 1 nu se executa, lista va fi goala si nu se va printa nimic, motiv pentru care nu e nevoie verificam daca taskurile 1 si 2 se executa.
+
+Executia taskurilor este explcata in detaliu in comentariile din cod.
+
+Clasa jucator: are prenume, nume si puncte de experinta, fac un constructor cu toate acestea si o functie ce returneaza punctele jucatorului.
+
+Clasa echipa: contine numele echipei, punctele acesteia si lista de jucatori, fac un constructor pentru numele echipei, un destructori pentru jucatorii echipei,
+o functie in care returnez lista de jucatori, una pentru numele echipei si alta pentru puncte.
+Pe langa acestea o sa mai am o functie ce seteaza puncte la media punctelor fiecarui jucator, o functie pentru a adauga puncte la fiecare echipa si inca una care verifica
+daca echipa apelanta are scorul mai mic sau egal cu cel al echipei oferite ca parametru.
+
+Clasa meci: aici avem meciul intre cele 2 echipe declarate private, fac un constructor cu parametrii referinte la echipe, o functie care returneaza prima echipa indiferent de scor, la fel si pentru a doua echipa,
+o functie ce returneaza echipa care castiga meciul pe baza experientei acumulate si o functie ce returneaza echipa ce pierde meciul tot pe baza experientei acumulate.
+
+
+
